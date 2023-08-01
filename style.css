@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --cor0: #000;
+    --cor1: #fff;
+    --cor2: #ff3131;
+    --cor3: #f3f3f3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor0);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 768px;
+    height: 480px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #a0a0a0;
+    overflow: hidden;
+}
+
+.form-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.form {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 0;
+}
+
+.form-login {
+    /* background-color: aqua; */
+}
+
+.form-register {
+   /* background-color: var(--cor2); */
+}
+
+.form-title {
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--cor0);
+}
+
+.form-social {
+    display: flex;
+    gap: 24px;
+}
+
+.social-icon {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 4px #0004;
+    background-color: var(--cor3);
+    transition: .5s;
+}
+
+.social-icon:hover {
+    background-color: var(--cor2);
+    transform: translateY(-15%);
+    color: var(--cor1);
+}
+
+.form-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-input {
+    
+}
