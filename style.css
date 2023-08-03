@@ -48,21 +48,21 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--cor1);
     padding: 55px 0;
-}
-
-.form-login {
-    /* background-color: aqua; */
+    transition: 1s;
 }
 
 .form-register {
-   /* background-color: var(--cor2); */
+    transform: translateX(-100%);
+    z-index: -1;
+    opacity: 0;
 }
+
 
 .form-title {
     font-size: 3rem;
     font-weight: 400;
-    color: var(--cor0);
 }
 
 .form-title-light {
@@ -141,6 +141,7 @@ main {
     transform: translateX(100%);
     color: var(--cor1);
     text-align: center;
+    z-index: 10;
     transition: 1s;
 }
 
@@ -164,4 +165,73 @@ main {
 .login-container.move .overlay:nth-child(2) {
     z-index: -1;
     opacity: 0;
+}
+
+
+.login-container.move .form-login {
+    transform: translateX(100%);
+    z-index: -1;
+    opacity: 0;
+}
+
+.login-container.move .form-register {
+    transform: translateX(0%);
+    z-index: 1;
+    opacity: 1;
+}
+
+.mobile-text {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .overlay-container {
+        display: none;
+
+    }
+
+    .login-container {
+        width: 75vw;
+        height: 75vh;
+
+    }
+    
+    .form {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .form-register {
+        position: absolute;
+        background-color: var(--cor2);
+        color: var(--cor1);
+        transform: translateX(100%);
+    }
+
+    .login-container.move .form-register {
+        transform: translateX(0%);
+    }
+
+    .form-button {
+        background-color: var(--cor2);
+        color: var(--cor1);
+        border: 2px solid var(--cor1);
+    }
+
+    .mobile-text {
+        display: block;
+    }
+
+    .mobile-text a {
+        font-weight: 900;
+        color: inherit;
+    }
+}
+
+@media (max-width:480px) {
+    .login-container {
+        width: 100vw;
+        height: 100vh;
+        box-shadow: none;
+    }
 }
