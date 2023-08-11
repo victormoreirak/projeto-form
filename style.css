@@ -3,7 +3,7 @@
 :root {
     --cor0: #000;
     --cor1: #fff;
-    --cor2: #ff3131;
+    --cor2: #0917e4;
     --cor3: #f3f3f3;
 }
 
@@ -61,7 +61,7 @@ main {
 
 
 .form-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 400;
 }
 
@@ -105,6 +105,10 @@ main {
     padding: 10px 20px;
     border-style: none;
     background-color: var(--cor3);
+}
+
+.form-link:hover {
+    font-weight: 500;
 }
 
 .form-button {
